@@ -1,0 +1,12 @@
+<div class="container p-3">
+    <h1 class="text-danger text-center">Galería</h1>
+    <h5 class="text-light mb-1 text-center">Explora nuestra colección de imágenes.</h5>
+
+<section class="gallery-section bg-black">
+    <div class="gallery-container">
+        <!-- Imágenes o Videos -->
+        <div class="gallery-item" *ngFor="let imagen of imagenes">
+            <img src="{{imagen.src}}" alt="{{imagen.alt}}">
+        </div>
+    </div>
+</section>
