@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   mensaje: string = "Estoy%20interesado%20en%20las%20clases...";
-  contacto: number = 1122768810;
+  contacto: number = +5491122768810;
   instagram: string = "team___farias";
 }
