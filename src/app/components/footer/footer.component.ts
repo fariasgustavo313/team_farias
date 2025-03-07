@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  mensaje: string = "Estoy%20interesado%20en%20las%20clases...";
+  contacto: number = 1122768810;
 }

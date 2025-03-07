@@ -13,12 +13,11 @@ export class GaleriaComponent {
 
   imagenes = [
 
-    { src: "img-kick1.jpg", alt: "imagen de kickboxing" },
-    { src: "img-kick2.jpg", alt: "imagen de kickboxing" },
-    { src: "img-kick3.jpg", alt: "imagen de kickboxing" },
-    { src: "img-kick4.jpg", alt: "imagen de kickboxing" },
-    { src: "img-kick5.jpg", alt: "imagen de kickboxing" },
-    { src: "img-kick6.jpg", alt: "imagen de kickboxing" },
+    { src: "img1.jpeg", alt: "imagen de kickboxing" },
+    { src: "img2.jpeg", alt: "imagen de kickboxing" },
+    { src: "img3.jpeg", alt: "imagen de kickboxing" },
+    { src: "img4.jpeg", alt: "imagen de kickboxing" },
+    { src: "img5.jpeg", alt: "imagen de kickboxing" },
   ]
 
 }

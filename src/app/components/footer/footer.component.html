@@ -1,4 +1,17 @@
 <div class="bg-black">
+    <!-- Botón de WhatsApp -->
+    <a [href]="'https://wa.me/'+ contacto +'?text=' + mensaje" 
+       target="_blank" 
+       class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px;" />
+    </a>
+
+    <!-- Mensajes del footer -->
     <p class="text-light text-center">© 2025 Escuela de Kickboxing. Todos los derechos reservados.</p>
     <p class="text-light text-center">Estados Unidos 1658, CABA</p>
+
+    <!-- Mensaje de creador ubicado a la izquierda, sin subrayado y tamaño de letra pequeño -->
+    <p class="text-light text-start m-3" style="font-size: 0.8rem; text-decoration: none; bottom: 20px;">
+        Desarrollado por <a href="https://www.linkedin.com/in/gustavoef" target="_blank" style="text-decoration: none; color: inherit;"><strong>Gustavo Farias</strong></a>
+    </p>
 </div>
