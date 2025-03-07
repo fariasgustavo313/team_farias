@@ -1,9 +1,22 @@
 <div class="bg-black">
+    <!-- Botón de Instagram (ubicado encima del botón de WhatsApp) -->
+    <a href="https://www.instagram.com/tu_cuenta" 
+       target="_blank" 
+       class="btn btn-primary rounded-circle position-fixed end-0 m-3" 
+       style="bottom: 90px;"> <!-- Ajusta el valor aquí -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" 
+             alt="Instagram" 
+             style="width: 40px; height: 40px;" />
+    </a>
+
     <!-- Botón de WhatsApp -->
     <a [href]="'https://wa.me/'+ contacto +'?text=' + mensaje" 
        target="_blank" 
-       class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px;" />
+       class="btn btn-success rounded-circle position-fixed end-0 m-3" 
+       style="bottom: 20px;"> <!-- Ajusta el valor aquí -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+             alt="WhatsApp" 
+             style="width: 40px; height: 40px;" />
     </a>
 
     <!-- Mensajes del footer -->
@@ -12,6 +25,8 @@
 
     <!-- Mensaje de creador ubicado a la izquierda, sin subrayado y tamaño de letra pequeño -->
     <p class="text-light text-start m-3" style="font-size: 0.8rem; text-decoration: none; bottom: 20px;">
-        Desarrollado por <a href="https://www.linkedin.com/in/gustavoef" target="_blank" style="text-decoration: none; color: inherit;"><strong>Gustavo Farias</strong></a>
+        Desarrollado por <a href="https://www.linkedin.com/in/gustavoef" target="_blank" style="text-decoration: none; color: inherit;">
+            <strong>Gustavo Farias</strong>
+        </a>
     </p>
 </div>

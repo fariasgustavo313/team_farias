@@ -1,12 +1,23 @@
 <div class="container p-3">
     <h1 class="text-danger text-center">Galería</h1>
-    <h5 class="text-light mb-1 text-center">Explora nuestra colección de imágenes.</h5>
+    <h5 class="text-light mb-1 text-center">Explora nuestra colección de imágenes y videos.</h5>
 
-<section class="gallery-section bg-black">
-    <div class="gallery-container">
-        <!-- Imágenes o Videos -->
-        <div class="gallery-item align-content-center" *ngFor="let imagen of imagenes">
-            <img src="{{imagen.src}}" alt="{{imagen.alt}}">
+    <section class="gallery-section bg-black">
+        <div class="gallery-container">
+            <!-- Imágenes o Videos -->
+            <div class="gallery-item align-content-center" *ngFor="let item of contenido">
+                <!-- Condicional para verificar si es imagen o video -->
+                <ng-container *ngIf="item.tipo === 'imagen'">
+                    <img src="{{item.src}}" alt="{{item.alt}}" class="gallery-media" />
+                </ng-container>
+
+                <ng-container *ngIf="item.tipo === 'video'">
+                    <video controls class="gallery-media">
+                        <source [src]="item.src" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </ng-container>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
